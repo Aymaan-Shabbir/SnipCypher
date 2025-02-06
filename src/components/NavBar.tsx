@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="flex items-center justify-between p-4 bg-gray-900 text-white shadow-md">
       {/* Logo */}
       <Link href="/">
-        <h1 className="text-xl font-bold cursor-pointer">🚀 SnippetApp</h1>
+        <h1 className="text-xl font-bold cursor-pointer">🎩 SnipCypher</h1>
       </Link>
 
       {/* Navigation Buttons */}
