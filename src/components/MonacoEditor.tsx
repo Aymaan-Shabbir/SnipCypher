@@ -7,7 +7,7 @@ import { saveSnippet } from "@/actions/save";
 
 export default function SnippetEditor({ snippet }: { snippet: Snippets }) {
   const [code, setCode] = useState(snippet.code);
-  const changeEventHandler = (value: "") => {
+  const changeEventHandler = (value: string = "") => {
     setCode(value);
   };
 

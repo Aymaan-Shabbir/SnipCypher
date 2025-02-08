@@ -5,7 +5,7 @@ import { DeleteSnippet } from "@/actions/delete";
 import { notFound } from "next/navigation";
 
 type SnippetDetailProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 const SnippetView: React.FC<SnippetDetailProps> = async ({ params }) => {
