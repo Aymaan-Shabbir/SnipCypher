@@ -44,3 +44,12 @@ const SnippetView: React.FC<SnippetDetailProps> = async ({ params }) => {
 };
 
 export default SnippetView;
+
+// turning dynamic route to static
+export const generateStaticParams = async () => {
+  const snippets = await prisma.snippets.findMany();
+
+  return snippets.map((snippet) => {
+    return { id: snippet.id.toString() };
+  });
+};
