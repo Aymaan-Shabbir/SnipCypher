@@ -28,6 +28,7 @@ async function createSnippet(
     // throw new Error("Some Internal server error");
 
     revalidatePath("/");
+    //using on demand caching
   } catch (error: unknown) {
     if (error instanceof Error) {
       return { message: error.message };

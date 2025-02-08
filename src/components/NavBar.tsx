@@ -12,14 +12,14 @@ export default function Navbar() {
           <span className="text-black">Snip</span>Cypher.
         </h1>
       </Link>
-      <div className="flex items-center justify-between gap-2 ">
+      <div className="flex items-center justify-between gap-2 " >
         <Link href="https://github.com/Aymaan-Shabbir/SnipCypher">
-          <Button className="bg-black hover:bg-gray-800">
+          <Button className="bg-black hover:bg-gray-800 ">
             <Github className="w-6 h-6 text-white hover:text-gray-400 cursor-pointer" />
           </Button>
         </Link>
         <Link href="/snippet/new">
-          <Button className="bg-blue-500 hover:bg-blue-600">Create</Button>
+          <Button className="bg-blue-500 hover:bg-blue-600" >Create</Button>
         </Link>
         <Link href="/">
           <Button className="bg-gray-700 hover:bg-gray-800">Snippets</Button>

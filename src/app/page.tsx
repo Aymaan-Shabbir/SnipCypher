@@ -4,6 +4,9 @@ import { prisma } from "@/lib/prisma";
 
 import Link from "next/link";
 // import Snippet from "./snippet/new/page";
+// export const revalidate = 0;
+// disabling caching
+// export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const snippetsList = await prisma.snippets.findMany();
